@@ -327,6 +327,11 @@ a {
   font-size: 1.35rem;
 }
 
+.project-detail-card > div:first-child h4 {
+  margin-bottom: 0.4rem;
+  color: #0f172a;
+}
+
 .project-detail-card p {
   color: #475569;
 }
