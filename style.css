@@ -321,13 +321,13 @@ a {
   display: grid;
 }
 
-.project-detail-card h3 {
+.project-detail-card h2 {
   margin-bottom: 0.6rem;
   color: #0f172a;
   font-size: 1.35rem;
 }
 
-.project-detail-card > div:first-child h4 {
+.project-detail-card > div:first-child h3 {
   margin-bottom: 0.4rem;
   color: #0f172a;
 }
@@ -345,7 +345,8 @@ a {
   margin-bottom: 0.35rem;
 }
 
-.detail-list h4 {
+.detail-list h3 {
+  font-size: 1rem;
   margin-bottom: 0.55rem;
   color: #0f172a;
 }
