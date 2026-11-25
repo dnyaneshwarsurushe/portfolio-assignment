@@ -14,6 +14,8 @@
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#goals">Goals</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -55,6 +57,52 @@
     </div>
   </section>
 
+  <section id="interests" class="section interests">
+    <div class="container">
+      <h2 class="section-title">My Interests</h2>
+      <div class="interest-grid">
+        <article class="interest-card">
+          <div class="interest-icon" aria-hidden="true">&#60;/&#62;</div>
+          <h3>Web Development</h3>
+          <p>I enjoy building clean, responsive websites and learning how HTML, CSS, and modern web technologies create useful user experiences.</p>
+        </article>
+        <article class="interest-card">
+          <div class="interest-icon" aria-hidden="true">&#129302;</div>
+          <h3>Artificial Intelligence</h3>
+          <p>I am interested in AI and machine learning applications that solve real problems and help people make better decisions.</p>
+        </article>
+        <article class="interest-card">
+          <div class="interest-icon" aria-hidden="true">&#128187;</div>
+          <h3>Problem Solving</h3>
+          <p>I enjoy analyzing problems, learning new concepts, and developing practical software solutions through continuous practice.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="goals" class="section goals">
+    <div class="container">
+      <h2 class="section-title">My Career Goals</h2>
+      <div class="goal-content">
+        <div class="goal-card">
+          <span class="goal-number">01</span>
+          <h3>Become a Skilled Software Engineer</h3>
+          <p>Build strong fundamentals in programming, software design, data structures, and application development.</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-number">02</span>
+          <h3>Develop Real-World Projects</h3>
+          <p>Create scalable and user-friendly applications that address everyday problems and provide measurable value.</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-number">03</span>
+          <h3>Grow in AI and Machine Learning</h3>
+          <p>Continue learning AI and machine learning and use these technologies to build responsible, practical solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="skills" class="section skills">
     <div class="container">
       <h2 class="section-title">Skills</h2>
@@ -62,26 +110,38 @@
         <div class="skill-card">
           <div class="skill-icon">&lt;/&gt;</div>
           <h3>HTML5</h3>
+          <progress class="skill-progress" value="85" max="100" aria-label="HTML5 skill level">85%</progress>
+          <span class="skill-percent">85%</span>
         </div>
         <div class="skill-card">
           <div class="skill-icon">&#127912;</div>
           <h3>CSS3</h3>
+          <progress class="skill-progress" value="80" max="100" aria-label="CSS3 skill level">80%</progress>
+          <span class="skill-percent">80%</span>
         </div>
         <div class="skill-card">
           <div class="skill-icon">&#128013;</div>
           <h3>Python</h3>
+          <progress class="skill-progress" value="75" max="100" aria-label="Python skill level">75%</progress>
+          <span class="skill-percent">75%</span>
         </div>
         <div class="skill-card">
           <div class="skill-icon">&#128187;</div>
           <h3>Generative AI</h3>
+          <progress class="skill-progress" value="70" max="100" aria-label="Generative AI skill level">70%</progress>
+          <span class="skill-percent">70%</span>
         </div>
         <div class="skill-card">
           <div class="skill-icon">&#128172;</div>
           <h3>Communication</h3>
+          <progress class="skill-progress" value="90" max="100" aria-label="Communication skill level">90%</progress>
+          <span class="skill-percent">90%</span>
         </div>
         <div class="skill-card">
           <div class="skill-icon">&#129302;</div>
           <h3>AI &amp; ML Fundamentals</h3>
+          <progress class="skill-progress" value="65" max="100" aria-label="AI and ML fundamentals skill level">65%</progress>
+          <span class="skill-percent">65%</span>
         </div>
       </div>
     </div>
@@ -96,7 +156,7 @@
           <div class="project-info">
             <h3>EduLoop AI</h3>
             <p>An AI-powered peer learning web platform that converts study materials into interactive quizzes and connects students with peer tutors.</p>
-            <a href="project-details.html#eduloop-details" class="btn btn-outline" target="_blank" rel="noopener">View Project</a>
+            <a href="project-details.html#eduloop-details" class="btn btn-outline"  rel="noopener">View Project</a>
           </div>
         </div>
 
@@ -105,7 +165,7 @@
           <div class="project-info">
             <h3>MediNearby</h3>
             <p>A mobile-first web application designed to help users search for medicines and check real-time stock availability at local pharmacies.</p>
-            <a href="project-details.html#medinearby-details" class="btn btn-outline" target="_blank" rel="noopener">View Project</a>
+            <a href="project-details.html#medinearby-details" class="btn btn-outline"  rel="noopener">View Project</a>
           </div>
         </div>
       </div>
@@ -119,11 +179,11 @@
       <div class="contact-container">
         <div class="contact-info">
           <p><strong>Name:</strong> Dnyaneshwar Surushe</p>
-          <p><strong>Email:</strong> <a href="mailto:contact@example.com">dipaksurushe82@gmail.com</a></p>
+          <p><strong>Email:</strong> <a href="mailto:dipaksurushe82@gmail.com">dipaksurushe82@gmail.com</a></p>
           <p><strong>Location:</strong> Pune, Maharashtra, India</p>
         </div>
 
-        <form class="contact-form" action="#" method="post">
+        <form class="contact-form" action="mailto:dipaksurushe82@gmail.com" method="post" enctype="text/plain">
           <div class="form-row">
             <label class="sr-only" for="fullname">Full Name</label>
             <input id="fullname" type="text" name="fullname" placeholder="Full Name" required />
@@ -150,6 +210,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>

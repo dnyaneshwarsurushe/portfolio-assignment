@@ -206,6 +206,91 @@ a {
   object-fit: cover;
 }
 
+.interests {
+  background: #ffffff;
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.interest-card {
+  min-height: 230px;
+  padding: 1.75rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-top: 4px solid #38bdf8;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest-card:hover,
+.goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.1);
+}
+
+.interest-icon {
+  color: #0284c7;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.interest-card h3,
+.goal-card h3 {
+  margin-bottom: 0.65rem;
+  color: #0f172a;
+}
+
+.interest-card p,
+.goal-card p {
+  color: #475569;
+}
+
+.goals {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.goals .section-title {
+  color: #ffffff;
+}
+
+.goal-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.goal-card {
+  position: relative;
+  min-height: 220px;
+  padding: 2rem 1.75rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goal-card h3 {
+  color: #ffffff;
+  margin-top: 1.25rem;
+}
+
+.goal-card p {
+  color: #cbd5e1;
+}
+
+.goal-number {
+  color: #38bdf8;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -237,6 +322,39 @@ a {
 
 .skill-card h3 {
   font-size: 1.05rem;
+}
+
+.skill-progress {
+  width: 100%;
+  height: 10px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 999px;
+  overflow: hidden;
+  appearance: none;
+}
+
+.skill-progress::-webkit-progress-bar {
+  background: #e2e8f0;
+  border-radius: 999px;
+}
+
+.skill-progress::-webkit-progress-value {
+  background: #0284c7;
+  border-radius: 999px;
+}
+
+.skill-progress::-moz-progress-bar {
+  background: #0284c7;
+  border-radius: 999px;
+}
+
+.skill-percent {
+  display: block;
+  margin-top: 0.35rem;
+  color: #0369a1;
+  font-size: 0.85rem;
+  font-weight: 700;
 }
 
 .projects {
@@ -424,6 +542,7 @@ a {
   font-size: 1rem;
 }
 
+
 .footer {
   background-color: #0f172a;
   color: #cbd5e1;
@@ -531,4 +650,9 @@ a {
   .hero-text h1 {
     font-size: 1.75rem;
   }
+}
+.skill-progress{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
